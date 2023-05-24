@@ -1,0 +1,19 @@
+// See https://storybook.js.org/docs/react/writing-stories/args.
+
+import type { StoryObj, ComponentMeta } from '@storybook/react'
+
+import { ${pascalName}, type ${pascalName}Props } from './${pascalName}'
+
+export default {
+  title: 'Components/${pascalName}',
+  component: ${pascalName},
+} as ComponentMeta<typeof ${pascalName}>
+
+type Story = StoryObj<typeof ${pascalName}>
+
+export const Generated: Story = {
+  args: {
+
+  } as ${pascalName}Props,
+}
+

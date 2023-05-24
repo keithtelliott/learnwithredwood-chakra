@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Percentage renders the correct ring length for a high percentage 1`] = `
+<circle
+  cx="115"
+  cy="115"
+  data-testid="percentageRing"
+  fill="none"
+  r="100"
+  stroke="green"
+  stroke-dasharray="calc(628.32 * 89 / 100) 628.32"
+  stroke-width="8"
+  transform="rotate(-90) translate(-230)"
+/>
+`;
+
+exports[`Percentage renders the correct ring length for a low percentage 1`] = `
+<circle
+  cx="115"
+  cy="115"
+  data-testid="percentageRing"
+  fill="none"
+  r="100"
+  stroke="red"
+  stroke-dasharray="calc(628.32 * 30 / 100) 628.32"
+  stroke-width="8"
+  transform="rotate(-90) translate(-230)"
+/>
+`;
+
+exports[`Percentage renders the correct ring length for a mid percentage 1`] = `
+<circle
+  cx="115"
+  cy="115"
+  data-testid="percentageRing"
+  fill="none"
+  r="100"
+  stroke="orange"
+  stroke-dasharray="calc(628.32 * 50 / 100) 628.32"
+  stroke-width="8"
+  transform="rotate(-90) translate(-230)"
+/>
+`;

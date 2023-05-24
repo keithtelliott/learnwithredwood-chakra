@@ -1,0 +1,14 @@
+interface Props {
+  // Add props here
+}
+
+const ${pascalName} = ({}: Props) => {
+  return (
+    <div>
+      <h2>{'${pascalName}'}</h2>
+      <p>{'Find me in ${outputPath}'}</p>
+    </div>
+  )
+}
+
+export { ${pascalName}, Props as ${pascalName}Props }
