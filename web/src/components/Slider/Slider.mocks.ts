@@ -35,4 +35,8 @@ export const slides = [
     alt: 'Dolphin Boy',
     src: 'https://www.themoviedb.org/t/p/w1280/gISoDEiaUH9BNEunmLC7FgUVaia.jpg',
   },
+  {
+    alt: 'Little Mermaid',
+    src: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ym1dxyOk4jFcSl4Q2zmRrA5BEEN.jpg',
+  },
 ]

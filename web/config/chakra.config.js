@@ -62,5 +62,23 @@ module.exports = {
         },
       },
     },
+    Link: {
+      variants: {
+        navStyle: {
+          color: 'white',
+          textTransform: 'uppercase',
+          fontWeight: 'light',
+          fontSize: '3xl',
+          letterSpacing: 'widest',
+          _hover: {
+            color: 'lemonLime',
+          },
+          mb: 10,
+          '&:last-of-type': {
+            marginBottom: 0,
+          },
+        },
+      },
+    },
   },
 }
