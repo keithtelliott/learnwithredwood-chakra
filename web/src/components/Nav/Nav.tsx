@@ -15,10 +15,11 @@ import { Ruler } from '../Ruler/Ruler'
 import { slides as data } from '../Slider/Slider.mocks'
 
 interface NavProps {
+  handleClose: () => void
   // Props
 }
 
-const Nav = ({}: NavProps) => {
+const Nav = ({ handleClose }: NavProps) => {
   return (
     <Grid
       templateAreas={`"header header"
@@ -36,6 +37,7 @@ const Nav = ({}: NavProps) => {
       <GridItem pl="2" area={'header'}>
         <Flex justifyContent="flex-end">
           <Button
+            onClick={handleClose}
             colorScheme="blackAlpha"
             fontWeight="medium"
             textTransform="uppercase"
