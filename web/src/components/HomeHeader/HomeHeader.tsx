@@ -29,6 +29,7 @@ const HomeHeader = ({}: HomeHeaderProps) => {
           <Image src="/images/logo.svg" alt="Rotten Ratings" />
         </Link>
         <Button
+          colorScheme="blackAlpha"
           // onClick={handleClick}
           onClick={onOpen}
           rightIcon={<Icon name="hamburger" />}
