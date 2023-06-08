@@ -1,4 +1,4 @@
-import { render } from '@redwoodjs/testing/web'
+import { render, screen } from '@redwoodjs/testing/web'
 
 import { HomeHeader } from './HomeHeader'
 
@@ -10,5 +10,20 @@ describe('HomeHeader', () => {
     expect(() => {
       render(<HomeHeader />)
     }).not.toThrow()
+  })
+
+  it('shows the Nav component when the menu button is clicked', () => {
+    // Arrange
+    const { getByRole } = render(<HomeHeader />)
+    const menuButton = getByRole('button', { name: 'MENU' })
+
+    expect(screen.queryByTestId('nav')).not.toBeInTheDocument()
+
+    // Act
+    menuButton.click()
+    // Assert
+
+    expect(screen.getByTestId('nav')).toBeInTheDocument()
+    // expect(getByRole('navigation')).toBeInTheDocument()
   })
 })

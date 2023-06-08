@@ -22,6 +22,7 @@ interface NavProps {
 const Nav = ({ handleClose }: NavProps) => {
   return (
     <Grid
+      data-testid="nav"
       templateAreas={`"header header"
                   "nav main"`}
       gridTemplateRows={'50px 1fr'}
