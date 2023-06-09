@@ -44,7 +44,10 @@ const HomeHeader = ({}: HomeHeaderProps) => {
         </Button>
       </Flex>
       <Drawer onClose={onClose} isOpen={isOpen} size={'full'}>
-        <DrawerOverlay />
+        {/* <DrawerOverlay />
+          // KTE, 6/9/2023:  DrawerOverlay greys-out the screen not covered by the drawer.
+          //   It is not needed here because the drawer is full-screen.
+        */}
         <DrawerContent>
           {/* <DrawerCloseButton /> */}
           {/* <DrawerHeader>{` drawer contents header`}</DrawerHeader> */}
